@@ -1,0 +1,11 @@
+ control: {
+            'places button':{
+                tap: function(){
+                    Ext.Ajax.request({
+                        url: 'https://maps.googleapis.com/maps/api/place/search/json?location=-33.867052,151.195&radius=500&types=food&name=harbour&sensor=false&key=AIzaSyA0UaYvM0Kd-GGcJztJ0aVfxNKJQ4UqkC8',
+                        useDefaultXhrHeader: false,
+                        cors: true,
+                        method: 'POST',
+                        Access-Control-Request-Method: 'GET',
+
+                    });
